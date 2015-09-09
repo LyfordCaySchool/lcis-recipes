@@ -28,6 +28,8 @@
             <true/>
             <key>requires</key>
             <string>Oracle8Java</string>
+            <key>version</key>
+            <string>%version%</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
