@@ -13,7 +13,7 @@
         <key>SEARCH_URL</key>
         <string>http://www.crashplan.com/shared/js/cp.download.js</string>
         <key>SEARCH_PATTERN</key>
-        <string>cp.download.CPPROE_CLIENT_VERSION = \'(?P&lt;version&gt;.*?)\';</string>
+        <string>cp.download.CPPROE_CLIENT_VERSION = \'(?P&lt;MATCHED_VERSION&gt;.*?)\';</string>
         <key>DOWNLOAD_URL</key>
         <string>https://download1.code42.com/installs/mac/install/CrashPlan/</string>
     </dict>
@@ -38,7 +38,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>%DOWNLOAD_URL%CrashPlan_%version%_Mac.dmg</string>
+                <string>%DOWNLOAD_URL%CrashPlan_%MATCHED_VERSION%_Mac.dmg</string>
                 <key>filename</key>
                 <string>%NAME%.dmg</string>
             </dict>
