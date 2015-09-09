@@ -6,6 +6,8 @@
     <string>Imports CCC into Munki.</string>
     <key>Input</key>
     <dict>
+        <key>DOWNLOADED_VERSION</key>
+        <string>%MATCHED_VERSION%</string>
         <key>IDENTIFIER</key>
         <string>com.github.lcis-recipes.CrashPlanClient.munki</string>
         <key>NAME</key>
@@ -29,7 +31,7 @@
             <key>requires</key>
             <string>Oracle8Java</string>
             <key>version</key>
-            <string>%MATCHED_VERSION%</string>
+            <string>%DOWNLOADED_VERSION%</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
