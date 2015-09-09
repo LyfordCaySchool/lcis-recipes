@@ -29,7 +29,7 @@
             <key>requires</key>
             <string>Oracle8Java</string>
             <key>version</key>
-            <string>%version%</string>
+            <string>%match%</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
