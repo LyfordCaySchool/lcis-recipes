@@ -14,25 +14,6 @@
         <string>CrashPlanClient</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/CrashPlanClient</string>
-        <key>pkginfo</key>
-        <dict>
-            <key>catalogs</key>
-            <array>
-                <string>testing</string>
-            </array>
-            <key>description</key>
-            <string>CrashPlan client software.</string>
-            <key>display_name</key>
-            <string>CrashPlan Client</string>
-            <key>name</key>
-            <string>%NAME%</string>
-            <key>unattended_install</key>
-            <true/>
-            <key>requires</key>
-            <string>Oracle8Java</string>
-            <key>version</key>
-            <string>%DOWNLOADED_VERSION%</string>
-        </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>0.3.1</string>
@@ -40,6 +21,33 @@
     <string>com.github.lcis-recipes.CrashPlanClient.download</string>
     <key>Process</key>
     <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+				<key>catalogs</key>
+				<array>
+					<string>testing</string>
+				</array>
+				<key>description</key>
+				<string>CrashPlan client software.</string>
+				<key>display_name</key>
+				<string>CrashPlan Client</string>
+				<key>name</key>
+				<string>%NAME%</string>
+				<key>unattended_install</key>
+				<true/>
+				<key>requires</key>
+				<string>Oracle8Java</string>
+                <key>version</key>
+                <string>%version%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiInfoCreator</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>MunkiPkginfoMerger</string>
+        </dict>
         <dict>
             <key>Arguments</key>
             <dict>
