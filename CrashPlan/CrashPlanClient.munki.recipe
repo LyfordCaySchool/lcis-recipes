@@ -28,8 +28,6 @@
             <true/>
             <key>requires</key>
             <string>Oracle8Java</string>
-            <key>version</key>
-            <string>%MATCHED_VERSION%</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
@@ -38,6 +36,18 @@
     <string>com.github.lcis-recipes.CrashPlanClient.download</string>
     <key>Process</key>
     <array>
+    	<dict>
+    		<key>Arguments</key>
+    		<dict>
+    			<key>additional_pkginfo</key>
+    			<dict>
+    				<key>version</key>
+    				<string>%MATCHED_VERSION%</string>
+    			</dict>
+    		</dict>
+    		<key>Processor</key>
+    		<string>MunkiPkginfoMerger</string>
+    	</dict>
         <dict>
             <key>Arguments</key>
             <dict>
