@@ -41,33 +41,6 @@
         <dict>
             <key>Arguments</key>
             <dict>
-				<key>catalogs</key>
-				<array>
-					<string>testing</string>
-				</array>
-				<key>description</key>
-				<string>CrashPlan client software.</string>
-				<key>display_name</key>
-				<string>CrashPlan Client</string>
-				<key>name</key>
-				<string>%NAME%</string>
-				<key>unattended_install</key>
-				<true/>
-				<key>requires</key>
-				<string>Oracle8Java</string>
-                <key>version</key>
-                <string>%version%</string>
-            </dict>
-            <key>Processor</key>
-            <string>MunkiInfoCreator</string>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>MunkiPkginfoMerger</string>
-        </dict>
-        <dict>
-            <key>Arguments</key>
-            <dict>
                 <key>pkg_path</key>
                 <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
                 <key>repo_subdirectory</key>
