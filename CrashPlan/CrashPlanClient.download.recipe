@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version CrashPlan Client.</string>
     <key>Identifier</key>
-    <string>com.github.lcis-recipes.CrashPlanClient.download</string>
+    <string>com.github.LyfordCaySchool.lcis-recipes.download.CrashPlanClient</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -13,7 +13,7 @@
         <key>SEARCH_URL</key>
         <string>http://www.crashplan.com/shared/js/cp.download.js</string>
         <key>SEARCH_PATTERN</key>
-        <string>cp.download.CPPROE_CLIENT_VERSION = \'(?P&lt;MATCHED_VERSION&gt;.*?)\';</string>
+        <string>cp.download.CPC_CLIENT_VERSION = \'(?P&lt;MATCHED_VERSION&gt;.*?)\';</string>
         <key>DOWNLOAD_URL</key>
         <string>https://download1.code42.com/installs/mac/install/CrashPlan/</string>
     </dict>
